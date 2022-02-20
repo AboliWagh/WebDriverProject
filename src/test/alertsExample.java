@@ -36,11 +36,13 @@ System.setProperty("webDriver.chrome.driver","chromedriver.exe");
 		firstclick.click();
 		
 		Alert alert1 = driver.switchTo().alert();
+		
 		System.out.println(alert1.getText());
 		driver.manage().timeouts().implicitlyWait(2000,TimeUnit.MILLISECONDS);
 		alert.dismiss();
 		
 		//sendkeys
+		
 		WebElement prompt = driver.findElement(By.xpath("//button[@id='promtButton']"));
 		prompt.click();
 		
